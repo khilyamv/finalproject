@@ -24,3 +24,14 @@ for(var i=0; i<data.length; i++) {
     judul = document.getElementById(judulId);
     judul.textContent = data[i].title;
 }
+
+//SEARCH BOX
+var cari = document.querySelector(".cari");
+cari.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        localStorage.setItem("keyword", cari.value);
+        window.open("result.html");
+
+    }
+});

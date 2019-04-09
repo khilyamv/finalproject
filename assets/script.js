@@ -42,3 +42,14 @@ for (i=0; i<4; i++) {
         + '</div>';
     document.getElementById(avaId).appendChild(userAva);
 }
+
+//SEARCH BOX
+var cari = document.querySelector(".cari");
+cari.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        localStorage.setItem("keyword", cari.value);
+        window.open("page/result.html");
+
+    }
+});

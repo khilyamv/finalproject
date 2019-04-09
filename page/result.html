@@ -27,21 +27,32 @@
         </div>.
         
         <div class="ui container">
-            <h3 class="ui horizontal divider header">Explore Books</h3>
-            <br>
-            <div class="ui centered grid" id="exploremore"></div>
+            <div class="ui centered grid">
+                <div class="ui big pink label">
+                    Keyword : <div class="detail" id="info"></div>
+                </div>
+            </div>
+            <br><br>
+            <div class="ui centered stackable grid" id="hasil"></div>
+            <div class="ui centered grid" id="error">
+                <div class="ui six wide column">
+                    <div class="ui icon error message">
+                        <i class="exclamation icon"></i>
+                        <div class="content">
+                            <div class="header">
+                            Oops
+                            </div>
+                            <p>Book not found! Maybe try another keyword?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
         <div id="modals"></div>
         
-        <script src="../assets/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
         <script type="text/javascript" src="../assets/data.json"></script>
-        <script type="text/javascript" src="../assets/explore.js"></script>
+        <script type="text/javascript" src="../assets/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../assets/result.js"></script>
         <script type="text/javascript" src="../assets/modal.js"></script>
     </body>
 </html>
-
-<div class="ui modal">
-  <div class="header">Header</div>
-</div>
