@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Libbie</title>
+        <link rel="icon" href="http://www.iconarchive.com/download/i103351/paomedia/small-n-flat/book.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+        <link rel="stylesheet" href="assets/my-slider.css"/>
+        <script src="assets/ism-2.2.min.js"></script>
+    </head>
+    <style>
+        a, a:hover {color: darkslategray;}
+        .testimoni-caption {
+            background: white;
+            color: darkslategrey;
+            border-radius: 5px;
+            padding:2em;
+        }
+        .testimoni-foto {
+            width:25%;
+            display:inline-block;
+        }
+        .testimoni-foto img {
+            width:80%;
+            border-radius: 100px;
+            margin-left: 0.5em;
+        }
+        .testimoni-author {
+            color: black;
+            margin-top:2em !important;
+            width:70%;
+            display:inline-block;
+            padding:0;
+            vertical-align:text-top;
+            margin-bottom:1em;
+        }
+        .testimoni-arrow {
+            background: white;
+            display: block;
+            content: "";
+            margin-top: -1.5em;
+            margin-left: 2em;
+            width: 1em;
+            height: 1em;
+            transform: rotate(45deg);
+            margin-bottom: 1em;
+        }
+    </style>
+    <body>
+        
+        <div class="ui inverted teal segment menu">
+                <div class="ui container secondary menu">
+                    <a class="header active item">
+                        <i class="book icon"></i>
+                            Libbie
+                    </a>
+                    <span class="header item">
+                        Lending Book Made Easy
+                    </span>
+                    <a href="page/register.html" class="right item ui animated inverted button" tabindex="0">
+                        <div class="visible content">&nbsp;&nbsp;&nbsp;Start Now</div>
+                        <div class="hidden content">
+                            <i class="angle right icon"></i>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        
+        <div class="ism-slider" data-play_type="loop" id="my-slider" style="margin-top:-1%;height:80%;">
+            <ol>
+                <li>
+                    <img src="assets/img/img01.jpg">
+                    <div class="ism-caption ism-caption-0">
+                        <h2>Discover</h2>
+                        <p>books to borrow</p>
+                        <button class="ui inverted button" href="page/register.html">Start Now</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/img/img02.jpg">
+                    <div class="ism-caption ism-caption-0">
+                        <h2>Lend</h2>
+                        <p>get books delivered to your home</p>
+                        <button class="ui inverted button" href="page/register.html">Start Now</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/img/img03.jpg">
+                    <div class="ism-caption ism-caption-0">
+                        <h2>Read</h2>
+                        <p>up to 1 month loan period</p>
+                        <button class="ui inverted button" href="page/register.html">Start Now</button>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        
+        <br/>
+        
+        <div class="ui container">
+            <div class="ui five column grid" id="discover">
+            </div>
+            <div class="ui five column centered grid">
+                <a href="page/explore.html" class="ui animated basic big pink button" tabindex="0">
+                    <div class="visible content">Explore More</div>
+                    <div class="hidden content">
+                        <i class="angle right icon"></i>
+                    </div>
+                </a>
+            </div>
+            <br><br>
+        </div>
+        <div class="ui inverted teal segment">
+            <div class="ui equal width  stackable padded grid">
+                <div class="row" id="testimoni"></div>
+                <br>
+            </div>
+        </div>
+        <center>&copy; 2019</center>
+        <div id="modals"></div>
+        
+        <script src="assets/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+        <script type="text/javascript" src="assets/data.json"></script>
+        <script type="text/javascript" src="assets/script.js"></script>
+        <script type="text/javascript" src="assets/modal.js"></script>
+    </body>
+</html>
